@@ -21,7 +21,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-weight: 700;
     /* cards */
 }
@@ -43,6 +43,8 @@ button,
 .more {
     font-size: 18px;
     font-weight: 700;
+    text-decoration: none;
+    color: black;
 }
 
 .filters button {
@@ -68,6 +70,10 @@ p {
     font-size: 0.8vw;
 }
 
+
+.line-break {
+  display: none;
+}
 
 /* HEADER */
 
@@ -269,6 +275,13 @@ h1 {
     box-shadow: 3px 2px 15px -12px;
 }
 
+.container a {
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
 .img-container {
     display: flex;
     height: 65%;
@@ -351,6 +364,12 @@ h1 {
     align-items: center;
 }
 
+#popular .container a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
 #popular .img-container {
     width: 40%;
     height: 100%;
@@ -359,7 +378,7 @@ h1 {
 #popular .card-container {
     width: 60%;
     height: 100%;
-    padding: 16px 22px 12px 15px;
+    /* padding: 16px 22px 12px 15px; */
     justify-content: space-around;
     gap: 30%;
 }
@@ -416,6 +435,11 @@ h1 {
     margin-left: 55px;
 }
 
+.footer a {
+  color: black;
+  text-decoration: none;
+}
+
 h4 {
     margin-bottom: 10px;
 }
@@ -439,6 +463,10 @@ h4 {
 
     .stars {
         font-size: 1.2vw;
+    }
+
+    .footer {
+      width: 22%;
     }
 
     .footer p {
@@ -508,9 +536,12 @@ h4 {
     }
     h3,
     #popular .container:hover h3 {
-        font-size: 14px;
+        font-size: 17px;
     }
 
+    .line-break {
+      display: block;
+    }
 
     .container p {
         font-size: 12px;
@@ -550,6 +581,7 @@ h4 {
     #navbar a {
         width: inherit;
         height: 80px;
+        border-bottom: 1px solid #F2F2F2;
     }
 
     #navbar a:hover {
